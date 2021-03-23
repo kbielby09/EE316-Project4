@@ -607,9 +607,9 @@ begin
         if rising_edge(M_AXI_ACLK) then
             for pixel in 0 to 7 loop
                 if(reg_pixels(pixel) = '1') then
-                    color_pixels(pixel*4-1 downto pixel*4-4) <= txtcolor;
+                    color_pixels((pixel+1)*4-1 downto (pixel+1)*4-4) <= txtcolor;
                 else
-                    color_pixels(pixel*4-1 downto pixel*4-4) <= bgcolor;
+                    color_pixels((pixel+1)*4-1 downto (pixel+1)*4-4) <= bgcolor;
                 end if;
             end loop;
         end if;
