@@ -1,0 +1,96 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Mar 30 21:53:41 2021
+| Host         : C195-UL-41 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file dgn_1_wrapper_control_sets_placed.rpt
+| Design       : dgn_1_wrapper
+| Device       : xc7z010
+------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    18 |
+|    Minimum number of control sets                        |    18 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    18 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              73 |           31 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              16 |           11 |
+| Yes          | No                    | No                     |             129 |           36 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              26 |            8 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|          Clock Signal          |                                Enable Signal                                |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++--------------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|  dgn_1_i/clk_wiz/inst/clk_out2 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg0                     | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg[5]_i_1_n_0          |                1 |              1 |
+|  dgn_1_i/clk_wiz/inst/clk_out2 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/mod2_reg                         | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/h_count_reg[6]_i_1_n_0          |                2 |              2 |
+|  dgn_1_i/clk_wiz/inst/clk_out2 |                                                                             |                                                                            |                3 |              3 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 |                                                                             | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/axi_awvalid_i_1_n_0 |                2 |              3 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 |                                                                             | dgn_1_i/rst_clk_wiz_100M/U0/EXT_LPF/lpf_int                                |                3 |              4 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 |                                                                             | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/axi_awready_i_1_n_0                 |                2 |              4 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/scan_line[3]_i_1_n_0 | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/LUT/reset           |                1 |              4 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 |                                                                             | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/LUT/reset           |                4 |              5 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 | dgn_1_i/rst_clk_wiz_100M/U0/SEQ/seq_cnt_en                                  | dgn_1_i/rst_clk_wiz_100M/U0/SEQ/SEQ_COUNTER/clear                          |                1 |              6 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/current_line         | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/LUT/reset           |                1 |              6 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/current_char         | dgn_1_i/videomemlab_0/U0/videomemlab_v1_0_M00_AXI_inst/LUT/reset           |                2 |              7 |
+|  dgn_1_i/clk_wiz/inst/clk_out2 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/mod2_reg                         |                                                                            |                3 |              8 |
+|  dgn_1_i/clk_wiz/inst/clk_out2 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg0                     |                                                                            |                4 |              9 |
+|  dgn_1_i/clk_wiz/inst/clk_out3 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr_out_reg[15]_i_1_n_2    |                                                                            |                2 |             16 |
+|  dgn_1_i/clk_wiz/inst/clk_out3 |                                                                             |                                                                            |               10 |             21 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_wr_addr                         |                                                                            |               17 |             48 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 | dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_data_reg[31]_i_1_n_2            |                                                                            |               10 |             48 |
+|  dgn_1_i/clk_wiz/inst/clk_out1 |                                                                             |                                                                            |               19 |             50 |
++--------------------------------+-----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+
+

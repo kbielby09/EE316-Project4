@@ -1,0 +1,43 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+| clk_out1_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_wr_addr_reg[6]/D|
+| clk_out1_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_wr_addr_reg[7]/D|
+| clk_out1_dgn_1_clk_wiz_0 | clk_out3_dgn_1_clk_wiz_0 |                                            dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[3]/D|
+| clk_out1_dgn_1_clk_wiz_0 | clk_out3_dgn_1_clk_wiz_0 |                                            dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]/D|
+| clk_out1_dgn_1_clk_wiz_0 | clk_out3_dgn_1_clk_wiz_0 |                                            dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[2]/D|
+| clk_out1_dgn_1_clk_wiz_0 | clk_out3_dgn_1_clk_wiz_0 |                                            dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[3]/D|
+| clk_out1_dgn_1_clk_wiz_0 | clk_out3_dgn_1_clk_wiz_0 |                                            dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[3]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[0]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[6]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[8]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                       dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[10]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                       dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[13]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                       dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[11]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[0]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                             dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[11]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                       dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[15]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[1]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                       dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[12]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                       dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[14]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                             dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[12]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                             dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[14]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[9]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[3]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                             dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[10]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[4]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[9]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[7]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[5]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[2]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[8]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[6]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[5]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[7]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[2]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[3]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                             dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[15]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                             dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[13]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                              dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/bram_rd_addr_reg[1]/D|
+| clk_out3_dgn_1_clk_wiz_0 | clk_out1_dgn_1_clk_wiz_0 |                                        dgn_1_i/slv_0/U0/slv_v1_0_S00_AXI_inst/previous_bram_addr_reg[4]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
