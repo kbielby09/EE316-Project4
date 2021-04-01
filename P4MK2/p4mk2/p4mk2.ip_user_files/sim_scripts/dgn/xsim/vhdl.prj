@@ -1,0 +1,19 @@
+vhdl xil_defaultlib  \
+"../../../bd/dgn/ipshared/72ae/src/char8x12_lookup_table.vhd" \
+"../../../bd/dgn/ipshared/72ae/src/scancode2ascii.vhd" \
+"../../../bd/dgn/ipshared/72ae/hdl/videomemlab_v1_0_M00_AXI.vhd" \
+"../../../bd/dgn/ipshared/72ae/hdl/videomemlab_v1_0.vhd" \
+"../../../bd/dgn/ip/dgn_videomemlab_0_0/sim/dgn_videomemlab_0_0.vhd" \
+"../../../bd/dgn/ipshared/559e/src/debounce.vhd" \
+"../../../bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd" \
+"../../../bd/dgn/ipshared/559e/src/ps2_keyboard.vhd" \
+"../../../bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0.vhd" \
+"../../../bd/dgn/ip/dgn_kybd_slv_0_0/sim/dgn_kybd_slv_0_0.vhd" \
+"../../../bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd" \
+"../../../bd/dgn/ipshared/1a17/src/vga_sync.vhd" \
+"../../../bd/dgn/ipshared/1a17/hdl/slv_v1_0.vhd" \
+"../../../bd/dgn/ip/dgn_slv_0_0/sim/dgn_slv_0_0.vhd" \
+"../../../bd/dgn/ip/dgn_rst_clk_wiz_100M_4/sim/dgn_rst_clk_wiz_100M_4.vhd" \
+"../../../bd/dgn/sim/dgn.vhd" \
+
+nosort

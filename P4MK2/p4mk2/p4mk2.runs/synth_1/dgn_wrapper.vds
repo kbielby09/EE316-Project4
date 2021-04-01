@@ -1,0 +1,1605 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr  1 14:25:40 2021
+# Process ID: 46424
+# Current directory: C:/P4MK2/p4mk2/p4mk2.runs/synth_1
+# Command line: vivado.exe -log dgn_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dgn_wrapper.tcl
+# Log file: C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dgn_wrapper.vds
+# Journal file: C:/P4MK2/p4mk2/p4mk2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dgn_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top dgn_wrapper -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 42664 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 836.383 ; gain = 233.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'dgn_wrapper' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/hdl/dgn_wrapper.vhd:29]
+INFO: [Synth 8-3491] module 'dgn' declared at 'C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:840' bound to instance 'dgn_i' of component 'dgn' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/hdl/dgn_wrapper.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'dgn' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:859]
+INFO: [Synth 8-3491] module 'dgn_clk_wiz_1' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.v:72' bound to instance 'clk_wiz' of component 'dgn_clk_wiz_1' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:1066]
+INFO: [Synth 8-6157] synthesizing module 'dgn_clk_wiz_1' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.v:72]
+INFO: [Synth 8-6157] synthesizing module 'dgn_clk_wiz_1_clk_wiz' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1_clk_wiz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 8.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'dgn_clk_wiz_1_clk_wiz' (4#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1_clk_wiz.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'dgn_clk_wiz_1' (5#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.v:72]
+INFO: [Synth 8-3491] module 'dgn_kybd_slv_0_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_kybd_slv_0_0/synth/dgn_kybd_slv_0_0.vhd:56' bound to instance 'kybd_slv_0' of component 'dgn_kybd_slv_0_0' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:1075]
+INFO: [Synth 8-638] synthesizing module 'dgn_kybd_slv_0_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_kybd_slv_0_0/synth/dgn_kybd_slv_0_0.vhd:87]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'kybd_slv_v1_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0.vhd:5' bound to instance 'U0' of component 'kybd_slv_v1_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_kybd_slv_0_0/synth/dgn_kybd_slv_0_0.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'kybd_slv_v1_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0.vhd:53]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'kybd_slv_v1_0_S00_AXI' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:5' bound to instance 'kybd_slv_v1_0_S00_AXI_inst' of component 'kybd_slv_v1_0_S00_AXI' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'kybd_slv_v1_0_S00_AXI' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:90]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_keyboard' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/ps2_keyboard.vhd:26' bound to instance 'KEYBOARD' of component 'ps2_keyboard' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'ps2_keyboard' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/ps2_keyboard.vhd:38]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/ps2_keyboard.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/ps2_keyboard.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'ps2_keyboard' (7#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/src/ps2_keyboard.vhd:38]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:342]
+WARNING: [Synth 8-3848] Net axi_awready in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:115]
+WARNING: [Synth 8-3848] Net axi_wready in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:116]
+WARNING: [Synth 8-3848] Net axi_bresp in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:117]
+WARNING: [Synth 8-3848] Net axi_bvalid in module/entity kybd_slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'kybd_slv_v1_0_S00_AXI' (8#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0_S00_AXI.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'kybd_slv_v1_0' (9#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/559e/hdl/kybd_slv_v1_0.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'dgn_kybd_slv_0_0' (10#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_kybd_slv_0_0/synth/dgn_kybd_slv_0_0.vhd:87]
+INFO: [Synth 8-3491] module 'dgn_rst_clk_wiz_100M_4' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/synth/dgn_rst_clk_wiz_100M_4.vhd:59' bound to instance 'rst_clk_wiz_100M' of component 'dgn_rst_clk_wiz_100M_4' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:1104]
+INFO: [Synth 8-638] synthesizing module 'dgn_rst_clk_wiz_100M_4' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/synth/dgn_rst_clk_wiz_100M_4.vhd:74]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/synth/dgn_rst_clk_wiz_100M_4.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+	Parameter C_NUM_BUS_RST bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
+	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
+	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+	Parameter INIT bound to: 1'b1 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+	Parameter C_EXT_RST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AUX_RST_WIDTH bound to: 4 - type: integer 
+	Parameter C_EXT_RESET_HIGH bound to: 1'b1 
+	Parameter C_AUX_RESET_HIGH bound to: 1'b0 
+INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:77949' bound to instance 'POR_SRL_I' of component 'SRL16' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-6157] synthesizing module 'SRL16' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:77949]
+	Parameter INIT bound to: 16'b0000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'SRL16' (11#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:77949]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+	Parameter C_CDC_TYPE bound to: 1 - type: integer 
+	Parameter C_RESET_STATE bound to: 0 - type: integer 
+	Parameter C_SINGLE_BIT bound to: 1 - type: integer 
+	Parameter C_FLOP_INPUT bound to: 0 - type: integer 
+	Parameter C_VECTOR_WIDTH bound to: 2 - type: integer 
+	Parameter C_MTBF_STAGES bound to: 4 - type: integer 
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (12#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (13#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+	Parameter C_SIZE bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (14#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (15#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (16#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'dgn_rst_clk_wiz_100M_4' (17#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/synth/dgn_rst_clk_wiz_100M_4.vhd:74]
+INFO: [Synth 8-3491] module 'dgn_slv_0_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/synth/dgn_slv_0_0.vhd:56' bound to instance 'slv_0' of component 'dgn_slv_0_0' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:1117]
+INFO: [Synth 8-638] synthesizing module 'dgn_slv_0_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/synth/dgn_slv_0_0.vhd:89]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'slv_v1_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0.vhd:5' bound to instance 'U0' of component 'slv_v1_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/synth/dgn_slv_0_0.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'slv_v1_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0.vhd:54]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'slv_v1_0_S00_AXI' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:5' bound to instance 'slv_v1_0_S00_AXI_inst' of component 'slv_v1_0_S00_AXI' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'slv_v1_0_S00_AXI' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:91]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'vga_sync' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:34' bound to instance 'VGA' of component 'vga_sync' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:51]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:128]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:157]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:186]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:215]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:244]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:273]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:302]
+INFO: [Synth 8-226] default block is never used [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:331]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (18#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/src/vga_sync.vhd:51]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:59' bound to instance 'BRAM' of component 'blk_mem_gen_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:71]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 1 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: blk_mem_gen_0.mif - type: string 
+	Parameter C_INIT_FILE bound to: blk_mem_gen_0.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 1 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 38400 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 38400 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 32 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 38400 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 38400 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 34 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 2 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     32.814778 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:239]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (29#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/synth/blk_mem_gen_0.vhd:71]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:247]
+WARNING: [Synth 8-6014] Unused sequential element previous_awaddr_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:472]
+WARNING: [Synth 8-3848] Net axi_arready in module/entity slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:145]
+WARNING: [Synth 8-3848] Net axi_rdata in module/entity slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:146]
+WARNING: [Synth 8-3848] Net axi_rresp in module/entity slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:147]
+WARNING: [Synth 8-3848] Net axi_rvalid in module/entity slv_v1_0_S00_AXI does not have driver. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'slv_v1_0_S00_AXI' (30#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'slv_v1_0' (31#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'dgn_slv_0_0' (32#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/synth/dgn_slv_0_0.vhd:89]
+INFO: [Synth 8-3491] module 'dgn_videomemlab_0_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_videomemlab_0_0/synth/dgn_videomemlab_0_0.vhd:56' bound to instance 'videomemlab_0' of component 'dgn_videomemlab_0_0' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:1148]
+INFO: [Synth 8-638] synthesizing module 'dgn_videomemlab_0_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_videomemlab_0_0/synth/dgn_videomemlab_0_0.vhd:83]
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: 32'b10101010000000000000000000000000 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 32'b01000000000000000000000000000000 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_M00_AXI_PS2_SLAVE_BASE_ADDR bound to: 32'b10000000000000000000000000000000 
+	Parameter C_M00_AXI_VIDEOMEM_BASE_ADDR bound to: 32'b01000000000000000000000000000000 
+INFO: [Synth 8-3491] module 'videomemlab_v1_0' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0.vhd:5' bound to instance 'U0' of component 'videomemlab_v1_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_videomemlab_0_0/synth/dgn_videomemlab_0_0.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'videomemlab_v1_0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0.vhd:53]
+	Parameter C_M00_AXI_PS2_SLAVE_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter C_M00_AXI_VIDEOMEM_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_START_DATA_VALUE bound to: -1442840576 - type: integer 
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'videomemlab_v1_0_M00_AXI' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:5' bound to instance 'videomemlab_v1_0_M00_AXI_inst' of component 'videomemlab_v1_0_M00_AXI' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'videomemlab_v1_0_M00_AXI' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:88]
+	Parameter C_M_PS2_SLAVE_BASE_ADDR bound to: -2147483648 - type: integer 
+	Parameter C_M_VIDEOMEM_BASE_ADDR bound to: 1073741824 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'char8x12_lookup_table' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/char8x12_lookup_table.vhd:11' bound to instance 'LUT' of component 'char8x12_lookup_table' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:595]
+INFO: [Synth 8-638] synthesizing module 'char8x12_lookup_table' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/char8x12_lookup_table.vhd:19]
+	Parameter INIT bound to: 12'b000000000000 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000111111010000001100110011011110110000001100000011010010110000001011111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000000100000011100001111100111111101111111011111110111011100110110000000000000000000000000000000000000000000000000000000000000000001111110111111111110011111000011111111111111111111011011111111110111111000000000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000001110000001000001101100111011100110110000010000001110000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000001110000111110011111110011111000011100000010000000000000000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000110000011110000111100000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000011100000010000011011001111111011111110011111000111110000111000000100000000000 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000011000001111000110011001100110001111000001100000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111110011111000011110000111110011111111111111111111111111111111111 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000001111000110011001100110011001100011110011011000111100001110000011110000000000000000000000000000000000000000000111111111111111111111111111001111100001110011001100110011100001111100111111111111111111111111111 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000000111000011111000111100001100000011000000110000111100001011000011110000000000000000000000000000000000000000000000000000000000000011000000110000111111000011000001111000110011001100110011001100011110000000000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000000000000001100011011011011111100011110001100110011001100011110001111110110110110001100000000000000000000000000000000000000000000011000001111000011100000110011001101111011011100110110001101100011111000110110001111100 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000100000001110000011111000111111001111111011111100111110001110000010000000000000000000000000000000000000000000000000000000000000000000001000001110000111100111111011111110011111100001111000001110000000100000000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000110011001100110000000000110011001100110011001100110011001100110011001100000000000000000000000000000000000000000000000000000000000011000001111000111111000011000000110000001100001111110001111000001100000000000 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000111110011000110110001100110000001111100111101101101111001111100000011001100011011000110011111000000000000000000000000000000000000000000000000011011000110110001101100011011000110111101101101111011011110110111111111000000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000111111000011000001111000111111000011000000110000111111000111100000110000000000000000000000000000000000000000000000000000000000001111111011111110111111100000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000001100000111100011111100001100000011000000110000001100000011000000110000000000000000000000000000000000000000000000000000000000000011000000110000001100000011000000110000001100001111110001111000001100000000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000011000000111001111111000011100000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000001110000111111110111000000110000000000000000000000000000 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000001001000110011011111111011001100010010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111100000011000000110000001100000000000000000000000000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000000000000000000000000000001000000111000001110000111110001111100011111001111111011111110000000000000000000000000000000000000000000000000000000000000000011111110111111100111110001111100001110000011100000111000000100000000000 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000000000000001100000011000001111000011110000111100000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000011011000110110011111110011011000110110011111110011011000110110001101100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000011011000110110001101100 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100110000011000001100000110000011001100100011000000000000000000000000000000000000000000000000000000000000110000001100000111110011000110110000000111100000111100000001101100011001111100001100000011000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000110000001100000011000000000000000000000000000000000000000000000000000001101110001100110111001101101111011011100001110000011100001101100001110000000000 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000110000011000001100000011000000110000001100000011000000011000000011000000000000000000000000000000000000000000000000000000000000110000000110000000110000001100000011000000110000001100000110000011000000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000110000001100001111110000110000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011011000011100011111110001110000110110000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000001111111000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000110000001100000011000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000100000011000001100000110000011000001100000110000001000000000000000000000000000000000000000000000000000000000000000000000000011000000110000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000000000000000000000111111000011000000110000001100000011000000110000001100000011110000110000000000000000000000000000000000000000000000000000000000000111110011000110110001101100111011011110111101101110011011000110011111000000000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000110000000111100011000000110000001100011001111100000000000000000000000000000000000000000000000000000000001111111011000110000011000001100000110000011000001100011011000110011111000000000 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000110000000111111000000110000001100000011011111110000000000000000000000000000000000000000000000000000000000110000001100000011000001111111001100110011011000111100001110000011000000000000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000000000000000000000000110000001100000011000000110000001100000110000011000001100011011111110000000000000000000000000000000000000000000000000000000000111110011000110110001101100011001111110000001100000011011000110011111000000000 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000110000001111110011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000111110011000110110001101100011001111100110001101100011011000110011111000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000000000000000110000011000000110000001100000000000000000000001100000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000011000000000000000000000011000000110000000000000000000000000000 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000111111100000000011111110000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000110000000110000000110000000110000011000001100000110000011000000000000 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000000000000001100000011000001100000110001101100011001111100000000000000000000000000000000000000000000000000000000000000110000011000001100000110000011000000011000000011000000011000000011000000000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011000110111111101100011011000110110001100110110000111000000000000000000000000000000000000000000000000000000000001111110000000110011101101111011011110110111101101100011011000110011111000000000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000000000000000000011110001100110000000110000001100000011000000110000001101100110001111000000000000000000000000000000000000000000000000000000000000111111011001100110011001100110001111100110011001100110011001100011111100000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000000000000000000111111101100110000001100000011000111110000001100000011001100110011111110000000000000000000000000000000000000000000000000000000000011111001101100110011001100110011001100110011001100110001101100001111100000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110111001100000011000000110110001101100011001111100000000000000000000000000000000000000000000000000000000000001111000001100000011000000110001111100000011000000110011001100111111100000000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000110000001100000011000001111000000000000000000000000000000000000000000000000000000000001100011011000110110001101100011011111110110001101100011011000110110001100000000 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011001100110001101100001111000011110001101100110011011000110000000000000000000000000000000000000000000000000000000000001110000110110001101100011000000110000001100000011000000110000011110000000000 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011010110110101101101011011111110111011101100011011000110000000000000000000000000000000000000000000000000000000001111111011001100100011000000110000001100000011000000110000001100000111100000000 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000001100011011100110111001101111011011011110110011101100111011000110110001100000000 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000000000011000000011111001101011011000110110001101100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000001111000001100000011000000110001111100110011001100110011001100011111100000000 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000000011000000011100000001100000001101100011001111100000000000000000000000000000000000000000000000000000000001100111011001100011011000011110001111100110011001100110011001100011111100000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110110001101100011011000110000000000000000000000000000000000000000000000000000000000111100000110000001100000011000000110000001100000011000010110100111111000000000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011101110111111101101011011010110110101101100011011000110000000000000000000000000000000000000000000000000000000000001000000111000011011001100011011000110110001101100011011000110110001100000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000111100011001100110011001100110011001100000000000000000000000000000000000000000000000000000000001100011011000110011011000011100000111000001110000110110011000110110001100000000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000000000000000000000011111000000110000001100000011000000110000001100000011000000110001111100000000000000000000000000000000000000000000000000000000001111111011000110100001100000110000011000001100000110001011000110111111100000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000000000000000000011111000110000001100000011000000110000001100000011000000110000001111100000000000000000000000000000000000000000000000000000000001000000011000000011000000011000000011000000011000000011000000010000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000011111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100011001101100001110000001000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011111000110000000111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000110000001100000011000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011000000110000001101100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000111111011001100110011001100110011001100011111000000110000001100000011100000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011000000110111111101100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000001111110001100110011001100110011001100110011111000110000001100000011100000000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000111110011000110110000001111110011000110110001101110011011011100000000000000000000000000000000000000000000000000000000000000000000000000000000000011110000011000000110000001100001111110000110000001100011011000011100000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000000011000000110000000000000000000000000000000000000000000000000000000000001100111011001100110011001100110011011100011011000000110000001100000011100000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000110011101100110001101100001111000110110011001100000011000000110000001110000000000000000000000000000000000000000000111100011001100110011001100000011000000110000001100000011100000000000001100000011000000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011010110110101101111111001101100000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000110000001100000011000000110000001100000011000000110000001110000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000001100110011001100110011001100110011001100011101100000000000000000000000000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000001111000001100000011000000111110001100110011001100110011011011100000000000000000000000000000000000000000000000000000000000000000000011110000011000000110001111100110011001100110011001100011101100000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011001110000000111001100011001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000001100000011000000110011001100011101100000000000000000000000000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000000000110111000110011001100110011001100110011001100110000000000000000000000000000000000000000000000000000000000000000000000000000000000111000011011000000110000001100000011000011111100001100000011000000110000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000011011001111111011010110110101101100011011000110000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000111000011011001100011011000110110001100000000000000000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000111110011000110110000001101110011100110110001101100011011000110000000000000000000000000000000000000000000000000000000000000000000000000000000001100011001101100001110000011100001101100110001100000000000000000000000000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000000000111000000011000000110000001100000001110000110000001100000011000011100000000000000000000000000000000000000000000000000000000000001111111010001100000110000011000001100010111111100000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000111000011000000110000001100001110000000110000001100000011000000011100000000000000000000000000000000000000000000000000000000000011000000110000001100000011000000000000001100000011000000110000001100000000000 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000001111111001101100011011000011100000111000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110110110111000000000 
+	Parameter SRVAL bound to: 12'b000000000000 
+	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-113] binding component instance 'bram1' to cell 'RAMB16_S9' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/char8x12_lookup_table.vhd:26]
+	Parameter INIT bound to: 12'b000000000000 
+	Parameter INITP_00 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_01 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_02 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_03 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_04 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_05 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_06 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INITP_07 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter INIT_00 bound to: 256'b0000000000000000000000000000000000000000000000000110111001110011011000110110001101100011011000110000000001100011011000110000000000000000000000000000000000000000000111000011001100011000001111000110011001100011000000110000001100000011011001100011110000000000 
+	Parameter INIT_01 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011111000110000000111100000000000110011000111100000110000000000000000000000000000000000000000000000000000111110011000110000001101111111011000110011111000000000000011000001100000110000 
+	Parameter INIT_02 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011111000110000000111100000000000011000000011000000011000000000000000000000000000000000000000000000000001101110001110110011001100111110001100000001111000000000001100110011001100000000 
+	Parameter INIT_03 bound to: 256'b0000000000000000000000000000000000011100001101100001100000111110011000110000001100000011011000110011111000000000000000000000000000000000000000000000000000000000000000000000000001101110001110110011001100111110001100000001111000000000000111000011011000011100 
+	Parameter INIT_04 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011000000110111111101100011001111100000000000110011001100110000000000000000000000000000000000000000000000000000000000111110011000110000001101111111011000110011111000000000001100110001111000001100 
+	Parameter INIT_05 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000001100110011001100000000000000000000000000000000000000000000000000000000000111110011000110000001101111111011000110011111000000000001100000001100000001100 
+	Parameter INIT_06 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000000011000000011000000011000000000000000000000000000000000000000000000000000111100000110000001100000011000000110000001110000000000011001100011110000011000 
+	Parameter INIT_07 bound to: 256'b0000000000000000000000000000000000000000011000110110001101111111011000110110001100110110000111000000000000011100001101100001110000000000000000000000000000000000000000000000000001100011011000110110001101111111011000110011011000011100000000000110001101100011 
+	Parameter INIT_08 bound to: 256'b0000000000000000000000000000000000000000000000000110111011111011000110111111111011011000110110110110011000000000000000000000000000000000000000000000000000000000000000000111111100000110000001100011111000000110000001100111111100000000000011000001100000110000 
+	Parameter INIT_09 bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011001111100000000000110011000111100000110000000000000000000000000000000000000000000000000001111011000110110001101100011011011111110001101100011011000110110001101101111110 
+	Parameter INIT_0A bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011001111100000000000110000000110000000110000000000000000000000000000000000000000000000000000111110011000110110001101100011011000110011111000000000011000110110001100000000 
+	Parameter INIT_0B bound to: 256'b0000000000000000000000000000000000000000000000000110111001110011011000110110001101100011011000110000000000011000000011000000011000000000000000000000000000000000000000000000000001101110011100110110001101100011011000110110001100000000001100110001111000001100 
+	Parameter INIT_0C bound to: 256'b0000000000000000000000000000000000000000000000000011111001100011011000110110001101100011011000110011111000000000011000110110001100000000000000000000000000000000001111100110001101100000011011100111001101100011011000110110001100000000011000110110001100000000 
+	Parameter INIT_0D bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000001111000110011000000110000001100110011000111100000110000001100000000000000000000000000000000000000000000000000000111110011000110110001101100011011000110110001101100011000000000110001101100011 
+	Parameter INIT_0E bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000001111000001100001111110000110000011110001100110011001100000000000000000000000000000000000000000000000000000000000110110011011110110011000000110000011110000011000000110001101100001110000000000 
+	Parameter INIT_0F bound to: 256'b0000000000000000000000000000000000001110000110110001100000011000000110000001100001111110000110000001100000011000110110000111000000000000000000000000000000000000000000000000000001100011001100110011001100110011011110110011001100000011001111110110001100111111 
+	Parameter INIT_10 bound to: 256'b0000000000000000000000000000000000000000000000000011110000011000000110000001100000011000000111000000000000001100000110000011000000000000000000000000000000000000000000000000000001101110001110110011001100111110001100000001111000000000000011000001100000110000 
+	Parameter INIT_11 bound to: 256'b0000000000000000000000000000000000000000000000000110111000111011001100110011001100110011001100110000000000000110000011000001100000000000000000000000000000000000000000000000000000111110011000110110001101100011011000110011111000000000000011000001100000110000 
+	Parameter INIT_12 bound to: 256'b0000000000000000000000000000000000000000000000000110001101110011011110110110111101100111011000110110001100000000001110110110111000000000000000000000000000000000000000000000000001100111011001100110011001100110011001100011110100000000001110110110111000000000 
+	Parameter INIT_13 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000001110000110110001101100001110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100000000001111100001101100011011000111100 
+	Parameter INIT_14 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000110000001100000011001111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110011000110110001100000110000011000000110000000000000011000000110000000000 
+	Parameter INIT_15 bound to: 256'b0000000000000000000000000000000001111100000110000011000001101100001110110000011000001100000110000011011001100110010001100000011000000000000000000000000000000000000000000000000000000000011000000110000001100000011111100000000000000000000000000000000000000000 
+	Parameter INIT_16 bound to: 256'b0000000000000000000000000000000000000000000000000001100000111100001111000011110000011000000110000000000000011000000110000000000000000000000000000000000000000000011000000110000001111110011011000111101101110110011011000001100000110110011001100100011000000110 
+	Parameter INIT_17 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000110110011011001101100001101100001101100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110110000110110000110110011011001101100000000000000000000000000 
+	Parameter INIT_18 bound to: 256'b0000000000000000000000000000000001010101101010100101010110101010010101011010101001010101101010100101010110101010010101011010101000000000000000000000000000000000001000101000100000100010100010000010001010001000001000101000100000100010100010000010001010001000 
+	Parameter INIT_19 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001100000011000000110000001100000011000000110000001100000000000000000000000000000000000111011101011101111101110101110111110111010111011111011101011101111101110101110111110111010111011 
+	Parameter INIT_1A bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001111100011000000111110001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100000011111000110000001100000011000000110000001100000011000 
+	Parameter INIT_1B bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011000111111100000000000000000000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000110110001101111011011000110110001101100011011000110110001101100 
+	Parameter INIT_1C bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011000110111101100000011011110110110001101100011011000110110000000000000000000000000000000000000110000001100000011000000110000001100000011111000110000001111100000000000000000000000000000000 
+	Parameter INIT_1D bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011000110111101100000011111110000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000110110001101100011011000110110001101100011011000110110001101100 
+	Parameter INIT_1E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000111111101101100011011000110110001101100011011000110110000000000000000000000000000000000000000000000000000000000000000000000000001111111011000000110111101101100011011000110110001101100 
+	Parameter INIT_1F bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110000001111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111000110000001111100011000000110000001100000011000 
+	Parameter INIT_20 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111111100011000000110000001100000011000000110000001100000000000000000000000000000000000000000000000000000000000000000000000000011111000000110000001100000011000000110000001100000011000 
+	Parameter INIT_21 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111100000011000000110000001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100011111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_22 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111111100011000000110000001100000011000000110000001100000000000000000000000000000000000000000000000000000000000000000000000000011111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_23 bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001110110001101100011011000110110001101100011011000110110000000000000000000000000000000000000110000001100000011000000110000001100011111000000110001111100000011000000110000001100000011000 
+	Parameter INIT_24 bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001110110000001100111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100000011001110110001101100011011000110110001101100 
+	Parameter INIT_25 bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001110111100000000111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000001110111101101100011011000110110001101100 
+	Parameter INIT_26 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111111100000000111111110000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000110110011101100000011001110110001101100011011000110110001101100 
+	Parameter INIT_27 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111111100000000111111110001100000011000000110000001100000000000000000000000000000000000011011000110110001101100011011000110110011101111000000001110111101101100011011000110110001101100 
+	Parameter INIT_28 bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111111100000000111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111011011000110110001101100011011000110110001101100 
+	Parameter INIT_29 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000001111110001101100011011000110110001101100011011000110110000000000000000000000000000000000011011000110110001101100011011000110110011111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_2A bound to: 256'b0000000000000000000000000000000000011000000110000001100000011000000110001111100000011000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111000000110001111100000011000000110000001100000011000 
+	Parameter INIT_2B bound to: 256'b0000000000000000000000000000000001101100011011000110110001101100011011001111111101101100011011000110110001101100011011000110110000000000000000000000000000000000011011000110110001101100011011000110110011111100000000000000000000000000000000000000000000000000 
+	Parameter INIT_2C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000001111100011000000110000001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100011111111000110001111111100011000000110000001100000011000 
+	Parameter INIT_2D bound to: 256'b0000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000110000001100000011000000110000001100011111000000000000000000000000000000000000000000000000000 
+	Parameter INIT_2E bound to: 256'b0000000000000000000000000000000000001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000111100000000000000000000000000000000111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000 
+	Parameter INIT_2F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111100000000000000000000000000000000111100001111000011110000111100001111000011110000111100001111000011110000111100001111000011110000 
+	Parameter INIT_30 bound to: 256'b0000000000000000000000000000000000000011000000110011101101100111011000110011111100011011001100110001111000000000000000000000000000000000000000000000000000000000000000000000000001101110001110110001101100011011000110110011101101101110000000000000000000000000 
+	Parameter INIT_31 bound to: 256'b0000000000000000000000000000000000000000000000000011011000110110001101100011011000110110011111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001100000011000000110000001100000011001000110011001100111111100000000 
+	Parameter INIT_32 bound to: 256'b0000000000000000000000000000000000000000000000000001111000110011001100110011001100011011011111100000000000000000000000000000000000000000000000000000000000000000000000000000000001111111011000110100011000001100000110000000110001000110011000110111111100000000 
+	Parameter INIT_33 bound to: 256'b0000000000000000000000000000000000000000000000000001100000011000000110000001100000111011011011100000000000000000000000000000000000000000000000000000000000000000000000000000000100000011000001100011111001100110011001100110011001100110000000000000000000000000 
+	Parameter INIT_34 bound to: 256'b0000000000000000000000000000000000000000000000000001110000110110011000110110001101111111011000110110001100110110000111000000000000000000000000000000000000000000000000000000000001111111000111000011011001100011011000110110001100110110000111000111111100000000 
+	Parameter INIT_35 bound to: 256'b0000000000000000000000000000000000000000000000000001111000110011011000110110001101100110001111000000110000000110011111000000000000000000000000000000000000000000000000000000000001110111001101100011011000110110011000110110001101100011001101100001110000000000 
+	Parameter INIT_36 bound to: 256'b0000000000000000000000000000000000000000000000000000001100000110001111100110011101101111011110110011111000110000011000000000000000000000000000000000000000000000000000000000000000000000000000000111111011011011110110110111111000000000000000000000000000000000 
+	Parameter INIT_37 bound to: 256'b0000000000000000000000000000000000000000000000000110001101100011011000110110001101100011011000110110001101100011001111100000000000000000000000000000000000000000000000000000000000111000000011000000011000000110001111100000011000000110000011000011100000000000 
+	Parameter INIT_38 bound to: 256'b0000000000000000000000000000000000000000000000000111111000000000000110000001100001111110000110000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000011111110000000001111111000000000111111100000000000000000000000000000000 
+	Parameter INIT_39 bound to: 256'b0000000000000000000000000000000000000000000000000111111000000000001100000001100000001100000001100000110000011000001100000000000000000000000000000000000000000000000000000000000001111110000000000000110000011000001100000110000000110000000110000000110000000000 
+	Parameter INIT_3A bound to: 256'b0000000000000000000000000000000000000000000011000001111000011010000110000001100000011000000110000001100000011000000110000001100000000000000000000000000000000000000110000001100000011000000110000001100000011000000110000101100001111000001100000000000000000000 
+	Parameter INIT_3B bound to: 256'b0000000000000000000000000000000000000000000000000000000000111011011011100000000000111011011011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001100000000000011111100000000000011000000110000000000000000000 
+	Parameter INIT_3C bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000001100000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000110011001100110001111000000000 
+	Parameter INIT_3D bound to: 256'b0000000000000000000000000000000000000000000110000001110000011110000110110001100000011000000110000001100011111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000 
+	Parameter INIT_3E bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000011000001100000110110000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011011000110110001101100011011000011011 
+	Parameter INIT_3F bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111100111111001111110011111100111111001111110000000000000000000000000 
+	Parameter SRVAL bound to: 12'b000000000000 
+	Parameter WRITE_MODE bound to: WRITE_FIRST - type: string 
+INFO: [Synth 8-113] binding component instance 'bram2' to cell 'RAMB16_S9' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/char8x12_lookup_table.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'char8x12_lookup_table' (33#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/char8x12_lookup_table.vhd:19]
+INFO: [Synth 8-3491] module 'scancode2ascii' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/scancode2ascii.vhd:11' bound to instance 'SCAN' of component 'scancode2ascii' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:605]
+INFO: [Synth 8-638] synthesizing module 'scancode2ascii' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/scancode2ascii.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'scancode2ascii' (34#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/src/scancode2ascii.vhd:18]
+WARNING: [Synth 8-6014] Unused sequential element next_state_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:441]
+WARNING: [Synth 8-6014] Unused sequential element scancode_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:442]
+WARNING: [Synth 8-6014] Unused sequential element pixelnum_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:511]
+WARNING: [Synth 8-6014] Unused sequential element previous_irq_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:663]
+INFO: [Synth 8-256] done synthesizing module 'videomemlab_v1_0_M00_AXI' (35#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'videomemlab_v1_0' (36#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'dgn_videomemlab_0_0' (37#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_videomemlab_0_0/synth/dgn_videomemlab_0_0.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'dgn_videomemlab_0_axi_periph_6' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:417]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_UNNG4F' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_UNNG4F' (38#1) [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1DX6FOA' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:172]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1DX6FOA' (39#1) [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:172]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1JC0679' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1JC0679' (40#1) [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:283]
+INFO: [Synth 8-3491] module 'dgn_xbar_6' declared at 'c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_xbar_6/synth/dgn_xbar_6.v:59' bound to instance 'xbar' of component 'dgn_xbar_6' [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:773]
+INFO: [Synth 8-6157] synthesizing module 'dgn_xbar_6' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_xbar_6/synth/dgn_xbar_6.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_axi_crossbar' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 64'b0000000000000000000000000001000000000000000000000000000000010000 
+	Parameter C_S_AXI_BASE_ID bound to: 0 - type: integer 
+	Parameter C_S_AXI_THREAD_ID_WIDTH bound to: 0 - type: integer 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_M_AXI_READ_CONNECTIVITY bound to: 64'b1111111111111111111111111111111111111111111111111111111111111111 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_S_AXI_SINGLE_THREAD bound to: 1 - type: integer 
+	Parameter C_S_AXI_WRITE_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_S_AXI_READ_ACCEPTANCE bound to: 1 - type: integer 
+	Parameter C_M_AXI_WRITE_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_M_AXI_READ_ISSUING bound to: 64'b0000000000000000000000000000000100000000000000000000000000000001 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_CONNECTIVITY_MODE bound to: 0 - type: integer 
+	Parameter P_ONES bound to: 65'b11111111111111111111111111111111111111111111111111111111111111111 
+	Parameter P_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_AXILITE_SIZE bound to: 3'b010 
+	Parameter P_INCR bound to: 2'b01 
+	Parameter P_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter P_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter P_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter P_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter P_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter P_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter P_LEN bound to: 8 - type: integer 
+	Parameter P_LOCK bound to: 1 - type: integer 
+	Parameter P_FAMILY bound to: zynq - type: string 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_crossbar_sasd' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_SLAVE_SLOTS bound to: 1 - type: integer 
+	Parameter C_NUM_MASTER_SLOTS bound to: 2 - type: integer 
+	Parameter C_NUM_ADDR_RANGES bound to: 1 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_M_AXI_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_M_AXI_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000000000000011111111111111110000000000000000000000000000000010000000000000001111111111111111 
+	Parameter C_S_AXI_BASE_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_S_AXI_HIGH_ID bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_AXI_SUPPORTS_USER_SIGNALS bound to: 0 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXI_SUPPORTS_WRITE bound to: 1'b1 
+	Parameter C_S_AXI_SUPPORTS_READ bound to: 1'b1 
+	Parameter C_M_AXI_SUPPORTS_WRITE bound to: 2'b11 
+	Parameter C_M_AXI_SUPPORTS_READ bound to: 2'b11 
+	Parameter C_S_AXI_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter C_M_AXI_SECURE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_M_AXI_ERR_MODE bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_R_REGISTER bound to: 1 - type: integer 
+	Parameter C_RANGE_CHECK bound to: 1 - type: integer 
+	Parameter C_ADDR_DECODE bound to: 1 - type: integer 
+	Parameter C_DEBUG bound to: 1 - type: integer 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE bound to: 3 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_NUM_MASTER_SLOTS_DE_LOG bound to: 2 - type: integer 
+	Parameter P_NUM_SLAVE_SLOTS_LOG bound to: 1 - type: integer 
+	Parameter P_AXI_AUSER_WIDTH bound to: 1 - type: integer 
+	Parameter P_AXI_WID_WIDTH bound to: 1 - type: integer 
+	Parameter P_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter P_BMESG_WIDTH bound to: 3 - type: integer 
+	Parameter P_RMESG_WIDTH bound to: 36 - type: integer 
+	Parameter P_WMESG_WIDTH bound to: 39 - type: integer 
+	Parameter P_AXILITE_ERRMODE bound to: 1 - type: integer 
+	Parameter P_NONSECURE_BIT bound to: 1 - type: integer 
+	Parameter P_M_SECURE_MASK bound to: 2'b00 
+	Parameter P_M_AXILITE_MASK bound to: 2'b00 
+	Parameter P_FIXED bound to: 2'b00 
+	Parameter P_BYPASS bound to: 0 - type: integer 
+	Parameter P_LIGHTWT bound to: 7 - type: integer 
+	Parameter P_FULLY_REG bound to: 1 - type: integer 
+	Parameter P_R_REG_CONFIG bound to: 1 - type: integer 
+	Parameter P_DECERR bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_addr_decoder' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_TARGETS bound to: 2 - type: integer 
+	Parameter C_NUM_TARGETS_LOG bound to: 1 - type: integer 
+	Parameter C_NUM_RANGES bound to: 1 - type: integer 
+	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_TARGET_ENC bound to: 1 - type: integer 
+	Parameter C_TARGET_HOT bound to: 1 - type: integer 
+	Parameter C_REGION_ENC bound to: 1 - type: integer 
+	Parameter C_BASE_ADDR bound to: 128'b00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000 
+	Parameter C_HIGH_ADDR bound to: 128'b00000000000000000000000000000000010000000000000011111111111111110000000000000000000000000000000010000000000000001111111111111111 
+	Parameter C_TARGET_QUAL bound to: 3'b011 
+	Parameter C_RESOLUTION bound to: 2 - type: integer 
+	Parameter C_COMPARATOR_THRESHOLD bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b100000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+	Parameter C_FAMILY bound to: rtl - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (41#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (42#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_VALUE bound to: 30'b010000000000000000000000000000 
+	Parameter C_DATA_WIDTH bound to: 30 - type: integer 
+	Parameter C_BITS_PER_LUT bound to: 6 - type: integer 
+	Parameter C_NUM_LUT bound to: 5 - type: integer 
+	Parameter C_FIX_DATA_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (42#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_addr_decoder' (43#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_decerr_slave' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_PROTOCOL bound to: 2 - type: integer 
+	Parameter C_RESP bound to: 3 - type: integer 
+	Parameter P_WRITE_IDLE bound to: 2'b00 
+	Parameter P_WRITE_DATA bound to: 2'b01 
+	Parameter P_WRITE_RESP bound to: 2'b10 
+	Parameter P_READ_IDLE bound to: 1'b0 
+	Parameter P_READ_DATA bound to: 1'b1 
+	Parameter P_AXI4 bound to: 0 - type: integer 
+	Parameter P_AXI3 bound to: 1 - type: integer 
+	Parameter P_AXILITE bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_decerr_slave' (44#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3501]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_addr_arbiter_sasd' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_NUM_S bound to: 1 - type: integer 
+	Parameter C_NUM_S_LOG bound to: 1 - type: integer 
+	Parameter C_AMESG_WIDTH bound to: 64 - type: integer 
+	Parameter C_GRANT_ENC bound to: 1 - type: integer 
+	Parameter C_ARB_PRIORITY bound to: 0 - type: integer 
+	Parameter P_PRIO_MASK bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_addr_arbiter_sasd' (45#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:65]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_splitter' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_splitter' (46#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_21_splitter__parameterized0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+	Parameter C_NUM_M bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_splitter__parameterized0' (46#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4461]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (47#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 1 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 1 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (47#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (47#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
+	Parameter C_REG_CONFIG bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_20_axic_register_slice' (48#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1476]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+	Parameter C_FAMILY bound to: rtl - type: string 
+	Parameter C_RATIO bound to: 3 - type: integer 
+	Parameter C_SEL_WIDTH bound to: 2 - type: integer 
+	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (48#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_aw_trans_seq_i_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:2056]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_trans_seq_i_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:2067]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_w_beat_cnt_i_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:2078]
+WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_r_beat_cnt_i_reg was removed.  [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:2091]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_crossbar_sasd' (49#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:1240]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_21_axi_crossbar' (50#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
+INFO: [Synth 8-6155] done synthesizing module 'dgn_xbar_6' (51#1) [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_xbar_6/synth/dgn_xbar_6.v:59]
+INFO: [Synth 8-256] done synthesizing module 'dgn_videomemlab_0_axi_periph_6' (52#1) [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:417]
+INFO: [Synth 8-256] done synthesizing module 'dgn' (53#1) [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/synth/dgn.vhd:859]
+INFO: [Synth 8-256] done synthesizing module 'dgn_wrapper' (54#1) [C:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/hdl/dgn_wrapper.vhd:29]
+WARNING: [Synth 8-3331] design generic_baseblocks_v2_1_0_mux_enc__parameterized0 has unconnected port S[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_WLAST
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_decerr_slave has unconnected port S_AXI_ARLEN[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_addr_decoder has unconnected port ADDR[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_addr_decoder has unconnected port ADDR[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_crossbar_sasd has unconnected port S_AXI_AWID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_crossbar_sasd has unconnected port S_AXI_ARID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_crossbar_sasd has unconnected port M_AXI_BID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_crossbar_sasd has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_crossbar_sasd has unconnected port M_AXI_RID[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_crossbar_sasd has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awsize[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awburst[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awburst[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awlock[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awcache[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awcache[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awcache[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awcache[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awqos[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awqos[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awqos[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awqos[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_awuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_wid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_wlast[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_wuser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[7]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[6]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[5]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[4]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlen[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arsize[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arsize[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arsize[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arburst[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arburst[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arlock[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arcache[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arcache[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arcache[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arcache[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arqos[3]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arqos[2]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arqos[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_arqos[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port s_axi_aruser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_bid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_bid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_buser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_buser[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_rid[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_rid[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_rlast[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_rlast[0]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_ruser[1]
+WARNING: [Synth 8-3331] design axi_crossbar_v2_1_21_axi_crossbar has unconnected port m_axi_ruser[0]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1JC0679 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1DX6FOA has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_UNNG4F has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_6 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_6 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_6 has unconnected port M01_ACLK
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_6 has unconnected port M01_ARESETN
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_6 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design dgn_videomemlab_0_axi_periph_6 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design videomemlab_v1_0_M00_AXI has unconnected port M_AXI_BRESP[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 1284.508 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1_board.xdc] for cell 'dgn_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1_board.xdc] for cell 'dgn_i/clk_wiz/inst'
+Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.xdc] for cell 'dgn_i/clk_wiz/inst'
+Finished Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.xdc] for cell 'dgn_i/clk_wiz/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dgn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dgn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/dgn_rst_clk_wiz_100M_4_board.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/dgn_rst_clk_wiz_100M_4_board.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/dgn_rst_clk_wiz_100M_4.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+Finished Parsing XDC File [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ip/dgn_rst_clk_wiz_100M_4/dgn_rst_clk_wiz_100M_4.xdc] for cell 'dgn_i/rst_clk_wiz_100M/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/P4MK2/p4mk2/p4mk2.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
+Finished Parsing XDC File [C:/P4MK2/p4mk2/p4mk2.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/P4MK2/p4mk2/p4mk2.srcs/constrs_1/imports/ip_repo/VGA_constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dgn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dgn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/dgn_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/dgn_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1284.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  FDR => FDRE: 12 instances
+  RAMB16_S9 => RAMB18E1: 2 instances
+  SRL16 => SRL16E: 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 1284.508 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for dgn_i/clk_wiz/inst. (constraint file  C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dont_touch.xdc, line 36).
+Applied set_property DONT_TOUCH = true for dgn_i/rst_clk_wiz_100M/U0. (constraint file  C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dont_touch.xdc, line 44).
+Applied set_property DONT_TOUCH = true for dgn_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/videomemlab_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/kybd_slv_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/slv_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/BRAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/clk_wiz. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/videomemlab_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/videomemlab_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dgn_i/rst_clk_wiz_100M. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:377]
+WARNING: [Synth 8-3936] Found unconnected internal register 'bram_wr_addr_reg' and it is trimmed from '32' to '16' bits. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/1a17/hdl/slv_v1_0_S00_AXI.vhd:192]
+INFO: [Synth 8-5546] ROM "data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/6b0d/hdl/axi_crossbar_v2_1_vl_rfs.v:3574]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               36 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
+	               16 Bit    Registers := 6     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 56    
++---Multipliers : 
+	                 4x31  Multipliers := 1     
+	                 6x31  Multipliers := 1     
+	                31x31  Multipliers := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input     36 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	 113 Input      7 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 4     
+	   7 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 12    
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 6     
+	   7 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 164   
+	   7 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module debounce 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module ps2_keyboard 
+Detailed RTL Component Info : 
++---XORs : 
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module kybd_slv_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module lpf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module upcnt_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sequence_psr 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 3     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module slv_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module char8x12_lookup_table 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module scancode2ascii 
+Detailed RTL Component Info : 
++---Muxes : 
+	 113 Input      7 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module videomemlab_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 20    
++---Multipliers : 
+	                 4x31  Multipliers := 1     
+	                 6x31  Multipliers := 1     
+	                31x31  Multipliers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 3     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 9     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 63    
+	   7 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+Module axi_crossbar_v2_1_21_addr_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module axi_crossbar_v2_1_21_decerr_slave 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_21_addr_arbiter_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module axi_crossbar_v2_1_21_splitter 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module axi_crossbar_v2_1_21_splitter__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module generic_baseblocks_v2_1_0_mux_enc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_register_slice_v2_1_20_axic_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               36 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     36 Bit        Muxes := 2     
+Module generic_baseblocks_v2_1_0_mux_enc__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module axi_crossbar_v2_1_21_crossbar_sasd 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr, operation Mode is: C'+A2*(B:0x50).
+DSP Report: register U0/slv_v1_0_S00_AXI_inst/VGA/v_count_reg_reg is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr.
+DSP Report: register U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr.
+DSP Report: operator U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr.
+DSP Report: operator U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr0 is absorbed into DSP U0/slv_v1_0_S00_AXI_inst/VGA/bram_addr.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:170]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:170]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/8dc5/hdl/videomemlab_v1_0_M00_AXI.vhd:170]
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R2, operation Mode is: (A:0x50)*B2.
+DSP Report: register U0/videomemlab_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R2.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R2, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/videomemlab_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R2.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R2 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R2.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R4, operation Mode is: (A:0x50)*B2.
+DSP Report: register U0/videomemlab_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R4.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R4, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/videomemlab_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R4.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R4 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R4.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R3, operation Mode is: A*(B:0xc).
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R3, operation Mode is: A*(B:0xc).
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: Generating DSP U0/videomemlab_v1_0_M00_AXI_inst/R3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+DSP Report: operator U0/videomemlab_v1_0_M00_AXI_inst/R3 is absorbed into DSP U0/videomemlab_v1_0_M00_AXI_inst/R3.
+INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [c:/P4MK2/p4mk2/p4mk2.srcs/sources_1/bd/dgn/ipshared/72d4/hdl/axi_register_slice_v2_1_vl_rfs.v:1709]
+INFO: [Synth 8-3886] merging instance 'dgn_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'dgn_i/kybd_slv_0/U0/kybd_slv_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/kybd_slv_0/\U0/kybd_slv_v1_0_S00_AXI_inst/axi_rdata_reg[31] )
+INFO: [Synth 8-3886] merging instance 'dgn_i/rst_clk_wiz_100M/U0/SEQ/pr_dec_reg[1]' (FD) to 'dgn_i/rst_clk_wiz_100M/U0/SEQ/bsr_dec_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/rst_clk_wiz_100M/U0/SEQ/bsr_dec_reg[1]' (FD) to 'dgn_i/rst_clk_wiz_100M/U0/SEQ/core_dec_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_HIGH_EXT.ACT_HI_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5) is unused and will be removed from module proc_sys_reset.
+WARNING: [Synth 8-3332] Sequential element (EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6) is unused and will be removed from module proc_sys_reset.
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (dgn_i/slv_0/\U0/slv_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[0]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[1]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[2]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_b_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[0]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[1]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[2]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_g_temp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[0]' (FD) to 'dgn_i/slv_0/U0/slv_v1_0_S00_AXI_inst/VGA/vga_r_temp_reg[1]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+--------------------------------------------+---------------+----------------+
+|Module Name         | RTL Object                                 | Depth x Width | Implemented As | 
++--------------------+--------------------------------------------+---------------+----------------+
+|dgn_videomemlab_0_0 | U0/videomemlab_v1_0_M00_AXI_inst/SCAN/data | 512x7         | LUT            | 
++--------------------+--------------------------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping	Report (see note below)
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dgn_slv_0_0         | C'+A2*(B:0x50)  | 10     | 7      | 7      | -      | 16     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | (A:0x50)*B2     | 5      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | (PCIN>>17)+A*B2 | 13     | 5      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | (A:0x50)*B2     | 7      | 8      | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | (PCIN>>17)+A*B2 | 13     | 7      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | A*(B:0xc)       | 13     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | (PCIN>>17)+A*B  | 13     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | A*(B:0xc)       | 18     | 5      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|dgn_videomemlab_0_0 | (PCIN>>17)+A*B  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:32 ; elapsed = 00:01:36 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5365] Flop U0/slv_v1_0_S00_AXI_inst/VGA/h_sync_reg_reg is being inverted and renamed to U0/slv_v1_0_S00_AXI_inst/VGA/h_sync_reg_reg_inv.
+INFO: [Synth 8-5365] Flop U0/slv_v1_0_S00_AXI_inst/VGA/v_sync_reg_reg is being inverted and renamed to U0/slv_v1_0_S00_AXI_inst/VGA/v_sync_reg_reg_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[0] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[0]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[1] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[1]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[2] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[2]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[3] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[3]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[4] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[4]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[5] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[5]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[6] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[6]_inv.
+INFO: [Synth 8-5365] Flop U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[7] is being inverted and renamed to U0/videomemlab_v1_0_M00_AXI_inst/reg_pixels_reg[7]_inv.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:36 ; elapsed = 00:01:40 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:36 ; elapsed = 00:01:40 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     4|
+|2     |CARRY4     |    19|
+|3     |DSP48E1    |     3|
+|4     |DSP48E1_1  |     2|
+|5     |DSP48E1_2  |     3|
+|6     |LUT1       |    20|
+|7     |LUT2       |    74|
+|8     |LUT3       |    33|
+|9     |LUT4       |   165|
+|10    |LUT5       |   112|
+|11    |LUT6       |   250|
+|12    |MMCME2_ADV |     1|
+|13    |MUXF7      |    20|
+|14    |MUXF8      |     5|
+|15    |RAMB16_S9  |     2|
+|16    |RAMB18E1   |     1|
+|17    |RAMB18E1_1 |     1|
+|18    |RAMB36E1   |     5|
+|19    |RAMB36E1_1 |    12|
+|20    |RAMB36E1_2 |     3|
+|21    |RAMB36E1_3 |    12|
+|22    |RAMB36E1_4 |     1|
+|23    |RAMB36E1_5 |     1|
+|24    |SRL16      |     1|
+|25    |FDR        |     8|
+|26    |FDRE       |   458|
+|27    |FDSE       |    13|
+|28    |IBUF       |     4|
+|29    |OBUF       |    15|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------------------------+-----------------------------------------------+------+
+|      |Instance                                               |Module                                         |Cells |
++------+-------------------------------------------------------+-----------------------------------------------+------+
+|1     |top                                                    |                                               |  1248|
+|2     |  dgn_i                                                |dgn                                            |  1230|
+|3     |    clk_wiz                                            |dgn_clk_wiz_1                                  |     6|
+|4     |      inst                                             |dgn_clk_wiz_1_clk_wiz                          |     6|
+|5     |    kybd_slv_0                                         |dgn_kybd_slv_0_0                               |   112|
+|6     |      U0                                               |kybd_slv_v1_0                                  |   112|
+|7     |        kybd_slv_v1_0_S00_AXI_inst                     |kybd_slv_v1_0_S00_AXI                          |   112|
+|8     |          KEYBOARD                                     |ps2_keyboard                                   |    96|
+|9     |            debounce_ps2_clk                           |debounce                                       |    26|
+|10    |            debounce_ps2_data                          |debounce_2                                     |    25|
+|11    |    rst_clk_wiz_100M                                   |dgn_rst_clk_wiz_100M_4                         |    62|
+|12    |      U0                                               |proc_sys_reset                                 |    62|
+|13    |        EXT_LPF                                        |lpf                                            |    19|
+|14    |          \ACTIVE_HIGH_EXT.ACT_HI_EXT                  |cdc_sync                                       |     5|
+|15    |          \ACTIVE_LOW_AUX.ACT_LO_AUX                   |cdc_sync_1                                     |     6|
+|16    |        SEQ                                            |sequence_psr                                   |    38|
+|17    |          SEQ_COUNTER                                  |upcnt_n                                        |    13|
+|18    |    slv_0                                              |dgn_slv_0_0                                    |   461|
+|19    |      U0                                               |slv_v1_0                                       |   461|
+|20    |        slv_v1_0_S00_AXI_inst                          |slv_v1_0_S00_AXI                               |   461|
+|21    |          BRAM                                         |blk_mem_gen_0                                  |   185|
+|22    |            U0                                         |blk_mem_gen_v8_4_4                             |   185|
+|23    |              inst_blk_mem_gen                         |blk_mem_gen_v8_4_4_synth                       |   185|
+|24    |                \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                                |   185|
+|25    |                  \valid.cstr                          |blk_mem_gen_generic_cstr                       |   185|
+|26    |                    \bindec_a.bindec_inst_a            |bindec                                         |     1|
+|27    |                    \bindec_b.bindec_inst_b            |bindec_0                                       |     1|
+|28    |                    \has_mux_b.B                       |blk_mem_gen_mux__parameterized0                |   123|
+|29    |                    \ramloop[0].ram.r                  |blk_mem_gen_prim_width                         |     1|
+|30    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init                  |     1|
+|31    |                    \ramloop[10].ram.r                 |blk_mem_gen_prim_width__parameterized9         |     1|
+|32    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized9  |     1|
+|33    |                    \ramloop[11].ram.r                 |blk_mem_gen_prim_width__parameterized10        |     1|
+|34    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized10 |     1|
+|35    |                    \ramloop[12].ram.r                 |blk_mem_gen_prim_width__parameterized11        |     1|
+|36    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized11 |     1|
+|37    |                    \ramloop[13].ram.r                 |blk_mem_gen_prim_width__parameterized12        |     2|
+|38    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized12 |     2|
+|39    |                    \ramloop[14].ram.r                 |blk_mem_gen_prim_width__parameterized13        |     1|
+|40    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized13 |     1|
+|41    |                    \ramloop[15].ram.r                 |blk_mem_gen_prim_width__parameterized14        |     1|
+|42    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized14 |     1|
+|43    |                    \ramloop[16].ram.r                 |blk_mem_gen_prim_width__parameterized15        |     1|
+|44    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized15 |     1|
+|45    |                    \ramloop[17].ram.r                 |blk_mem_gen_prim_width__parameterized16        |     3|
+|46    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized16 |     3|
+|47    |                    \ramloop[18].ram.r                 |blk_mem_gen_prim_width__parameterized17        |     3|
+|48    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized17 |     3|
+|49    |                    \ramloop[19].ram.r                 |blk_mem_gen_prim_width__parameterized18        |     3|
+|50    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized18 |     3|
+|51    |                    \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0         |     1|
+|52    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized0  |     1|
+|53    |                    \ramloop[20].ram.r                 |blk_mem_gen_prim_width__parameterized19        |     3|
+|54    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized19 |     3|
+|55    |                    \ramloop[21].ram.r                 |blk_mem_gen_prim_width__parameterized20        |     3|
+|56    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized20 |     3|
+|57    |                    \ramloop[22].ram.r                 |blk_mem_gen_prim_width__parameterized21        |     3|
+|58    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized21 |     3|
+|59    |                    \ramloop[23].ram.r                 |blk_mem_gen_prim_width__parameterized22        |     3|
+|60    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized22 |     3|
+|61    |                    \ramloop[24].ram.r                 |blk_mem_gen_prim_width__parameterized23        |     3|
+|62    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized23 |     3|
+|63    |                    \ramloop[25].ram.r                 |blk_mem_gen_prim_width__parameterized24        |     1|
+|64    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized24 |     1|
+|65    |                    \ramloop[26].ram.r                 |blk_mem_gen_prim_width__parameterized25        |     1|
+|66    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized25 |     1|
+|67    |                    \ramloop[27].ram.r                 |blk_mem_gen_prim_width__parameterized26        |     1|
+|68    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized26 |     1|
+|69    |                    \ramloop[28].ram.r                 |blk_mem_gen_prim_width__parameterized27        |     1|
+|70    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized27 |     1|
+|71    |                    \ramloop[29].ram.r                 |blk_mem_gen_prim_width__parameterized28        |     1|
+|72    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized28 |     1|
+|73    |                    \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1         |     1|
+|74    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized1  |     1|
+|75    |                    \ramloop[30].ram.r                 |blk_mem_gen_prim_width__parameterized29        |     1|
+|76    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized29 |     1|
+|77    |                    \ramloop[31].ram.r                 |blk_mem_gen_prim_width__parameterized30        |     1|
+|78    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized30 |     1|
+|79    |                    \ramloop[32].ram.r                 |blk_mem_gen_prim_width__parameterized31        |     1|
+|80    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized31 |     1|
+|81    |                    \ramloop[33].ram.r                 |blk_mem_gen_prim_width__parameterized32        |     1|
+|82    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized32 |     1|
+|83    |                    \ramloop[34].ram.r                 |blk_mem_gen_prim_width__parameterized33        |     1|
+|84    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized33 |     1|
+|85    |                    \ramloop[35].ram.r                 |blk_mem_gen_prim_width__parameterized34        |     3|
+|86    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized34 |     3|
+|87    |                    \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2         |     1|
+|88    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized2  |     1|
+|89    |                    \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3         |     1|
+|90    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized3  |     1|
+|91    |                    \ramloop[5].ram.r                  |blk_mem_gen_prim_width__parameterized4         |     1|
+|92    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized4  |     1|
+|93    |                    \ramloop[6].ram.r                  |blk_mem_gen_prim_width__parameterized5         |     1|
+|94    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized5  |     1|
+|95    |                    \ramloop[7].ram.r                  |blk_mem_gen_prim_width__parameterized6         |     1|
+|96    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized6  |     1|
+|97    |                    \ramloop[8].ram.r                  |blk_mem_gen_prim_width__parameterized7         |     1|
+|98    |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized7  |     1|
+|99    |                    \ramloop[9].ram.r                  |blk_mem_gen_prim_width__parameterized8         |     1|
+|100   |                      \prim_init.ram                   |blk_mem_gen_prim_wrapper_init__parameterized8  |     1|
+|101   |          VGA                                          |vga_sync                                       |   147|
+|102   |    videomemlab_0                                      |dgn_videomemlab_0_0                            |   308|
+|103   |      U0                                               |videomemlab_v1_0                               |   308|
+|104   |        videomemlab_v1_0_M00_AXI_inst                  |videomemlab_v1_0_M00_AXI                       |   308|
+|105   |          LUT                                          |char8x12_lookup_table                          |    14|
+|106   |          SCAN                                         |scancode2ascii                                 |    51|
+|107   |    videomemlab_0_axi_periph                           |dgn_videomemlab_0_axi_periph_6                 |   281|
+|108   |      xbar                                             |dgn_xbar_6                                     |   281|
+|109   |        inst                                           |axi_crossbar_v2_1_21_axi_crossbar              |   281|
+|110   |          \gen_sasd.crossbar_sasd_0                    |axi_crossbar_v2_1_21_crossbar_sasd             |   281|
+|111   |            addr_arbiter_inst                          |axi_crossbar_v2_1_21_addr_arbiter_sasd         |   121|
+|112   |            \gen_decerr.decerr_slave_inst              |axi_crossbar_v2_1_21_decerr_slave              |    12|
+|113   |            reg_slice_r                                |axi_register_slice_v2_1_20_axic_register_slice |   129|
+|114   |            splitter_ar                                |axi_crossbar_v2_1_21_splitter__parameterized0  |     4|
+|115   |            splitter_aw                                |axi_crossbar_v2_1_21_splitter                  |     7|
++------+-------------------------------------------------------+-----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1284.508 ; gain = 681.184
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 434 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:36 . Memory (MB): peak = 1284.508 ; gain = 681.184
+Synthesis Optimization Complete : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1284.508 ; gain = 681.184
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1284.508 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1284.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  FDR => FDRE: 8 instances
+  RAMB16_S9 => RAMB18E1: 2 instances
+  SRL16 => SRL16E: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+217 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 1284.508 ; gain = 968.703
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1284.508 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/P4MK2/p4mk2/p4mk2.runs/synth_1/dgn_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file dgn_wrapper_utilization_synth.rpt -pb dgn_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  1 14:27:34 2021...

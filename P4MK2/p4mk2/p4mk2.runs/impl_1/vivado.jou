@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Apr  1 14:27:41 2021
+# Process ID: 46832
+# Current directory: C:/P4MK2/p4mk2/p4mk2.runs/impl_1
+# Command line: vivado.exe -log dgn_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source dgn_wrapper.tcl -notrace
+# Log file: C:/P4MK2/p4mk2/p4mk2.runs/impl_1/dgn_wrapper.vdi
+# Journal file: C:/P4MK2/p4mk2/p4mk2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source dgn_wrapper.tcl -notrace

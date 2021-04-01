@@ -1,0 +1,50 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.845451",
+   "Default View_TopLeft":"238,47",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port vsync -pg 1 -lvl 6 -x 1500 -y 430 -defaultsOSRD
+preplace port hsync -pg 1 -lvl 6 -x 1500 -y 410 -defaultsOSRD
+preplace port ps2 -pg 1 -lvl 6 -x 1500 -y 250 -defaultsOSRD
+preplace port PS2_CLK -pg 1 -lvl 0 -x -20 -y 20 -defaultsOSRD
+preplace port PS2_DATA -pg 1 -lvl 0 -x -20 -y 40 -defaultsOSRD
+preplace port sys_clock -pg 1 -lvl 0 -x -20 -y 410 -defaultsOSRD
+preplace port reset_rtl -pg 1 -lvl 0 -x -20 -y 280 -defaultsOSRD
+preplace portBus vga_r -pg 1 -lvl 6 -x 1500 -y 450 -defaultsOSRD
+preplace portBus vga_g -pg 1 -lvl 6 -x 1500 -y 470 -defaultsOSRD
+preplace portBus vga_b -pg 1 -lvl 6 -x 1500 -y 490 -defaultsOSRD
+preplace inst slv_0 -pg 1 -lvl 5 -x 1350 -y 450 -defaultsOSRD
+preplace inst clk_wiz -pg 1 -lvl 1 -x 110 -y 400 -defaultsOSRD
+preplace inst videomemlab_0_axi_periph -pg 1 -lvl 4 -x 1010 -y 200 -defaultsOSRD
+preplace inst rst_clk_wiz_100M -pg 1 -lvl 2 -x 410 -y 510 -defaultsOSRD
+preplace inst kybd_slv_0 -pg 1 -lvl 5 -x 1350 -y 240 -defaultsOSRD
+preplace inst videomemlab_0 -pg 1 -lvl 3 -x 720 -y 120 -defaultsOSRD
+preplace netloc kybd_slv_0_PS2_new_sig 1 5 1 NJ 250
+preplace netloc kybd_slv_0_IRQ_I 1 2 4 590 30 NJ 30 NJ 30 1480
+preplace netloc clk_wiz_clk_out1 1 1 4 220 130 580 40 850 50 1180
+preplace netloc sys_clock_1 1 0 1 NJ 410
+preplace netloc clk_wiz_clk_out2 1 1 4 NJ 390 NJ 390 NJ 390 1200
+preplace netloc clk_wiz_clk_out3 1 1 4 NJ 410 NJ 410 NJ 410 1170
+preplace netloc slv_0_hsync 1 5 1 NJ 410
+preplace netloc slv_0_vsync 1 5 1 NJ 430
+preplace netloc PS2_CLK_1 1 0 5 0J 10 NJ 10 NJ 10 NJ 10 1220J
+preplace netloc PS2_DATA_1 1 0 5 10J 20 NJ 20 NJ 20 NJ 20 1210J
+preplace netloc slv_0_vga_g 1 5 1 NJ 470
+preplace netloc slv_0_vga_b 1 5 1 NJ 490
+preplace netloc slv_0_vga_r 1 5 1 NJ 450
+preplace netloc clk_wiz_locked 1 1 1 200 430n
+preplace netloc rst_clk_wiz_100M_peripheral_aresetn 1 2 3 590 200 860 60 1160
+preplace netloc reset_rtl_1 1 0 2 0 310 210
+preplace netloc videomemlab_0_M00_AXI 1 3 1 N 120
+preplace netloc videomemlab_0_axi_periph_M00_AXI 1 4 1 N 190
+preplace netloc videomemlab_0_axi_periph_M01_AXI 1 4 1 1190 210n
+levelinfo -pg 1 -20 110 410 720 1010 1350 1500
+pagesize -pg 1 -db -bbox -sgen -150 0 1620 610
+"
+}
+{
+   "da_axi4_cnt":"14",
+   "da_board_cnt":"21"
+}

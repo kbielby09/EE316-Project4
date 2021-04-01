@@ -1,0 +1,12 @@
+verilog blk_mem_gen_v8_4_4 --include "../../../../p4mk2.srcs/sources_1/bd/dgn/ipshared/4fba" --include "../../../../p4mk2.srcs/sources_1/bd/dgn/ipshared/ec67/hdl" \
+"../../../../p4mk2.srcs/sources_1/bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/simulation/blk_mem_gen_v8_4.v" \
+
+verilog xil_defaultlib --include "../../../../p4mk2.srcs/sources_1/bd/dgn/ipshared/4fba" --include "../../../../p4mk2.srcs/sources_1/bd/dgn/ipshared/ec67/hdl" \
+"../../../bd/dgn/ip/dgn_slv_0_0/src/blk_mem_gen_0_1/sim/blk_mem_gen_0.v" \
+"../../../bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1_clk_wiz.v" \
+"../../../bd/dgn/ip/dgn_clk_wiz_1/dgn_clk_wiz_1.v" \
+"../../../bd/dgn/ip/dgn_xbar_6/sim/dgn_xbar_6.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort
