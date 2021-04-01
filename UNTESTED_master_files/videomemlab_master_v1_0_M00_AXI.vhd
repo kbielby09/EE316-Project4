@@ -590,7 +590,7 @@ begin
 	rst_p <= not M_AXI_ARESETN;
 
     -- instantiate the 8x12 lookup table here
-    INST_LUT : char8x12_lookup_table port map(clk => M_AXI_ACLK, reset => M_AXI_ARESETN, ascii => ascii, line => scan_line, pixels => pixels);
+    INST_LUT : char8x12_lookup_table port map(clk => M_AXI_ACLK, reset => rst_p, ascii => ascii, line => scan_line, pixels => pixels);
     
     -- instantiate the scancode to ascii component here
     INST_SCAN : scancode2ascii port map(scancode => code, ascii => ascii, shift => shift, ctrl => ctrl, alt => alt);
@@ -602,18 +602,14 @@ begin
     -- set the color_pixels word based on the reg_pixels byte which is a registered
     -- version of the pixels byte that comes from the lookup table.  When reg_pixels is '1', we use the
     -- text color, otherwise we use the background color
-    COLOR : process(M_AXI_ACLK)
-    begin
-        if rising_edge(M_AXI_ACLK) then
-            for pixel in 0 to 7 loop
-                if(reg_pixels(pixel) = '1') then
-                    color_pixels((pixel+1)*4-1 downto (pixel+1)*4-4) <= txtcolor;
-                else
-                    color_pixels((pixel+1)*4-1 downto (pixel+1)*4-4) <= bgcolor;
-                end if;
-            end loop;
-        end if;
-    end process COLOR;
+    
+     for pixel in 0 to 7 loop
+         if(reg_pixels(pixel) = '1') then
+             color_pixels((pixel+1)*4-1 downto (pixel+1)*4-4) <= txtcolor;
+         else
+             color_pixels((pixel+1)*4-1 downto (pixel+1)*4-4) <= bgcolor;
+         end if;
+     end loop;
 
 	-- User logic ends
 
