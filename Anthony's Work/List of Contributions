@@ -1,0 +1,4 @@
+-Implemented the user logic in the master file to assign pixel colors to the pixel values returned from the scancode-to-ascii LUT.
+-Made many changes to the PS2 state machine to make it compatible with the scancode recieved from the PS2 keyboard, as well as fix most of the original logical flaws.
+-Created a Testbench for the PS2 state machine.
+-Created edited versions of the master and PS2 code to see if they work on the Cora Z7 (not included in this directory).
