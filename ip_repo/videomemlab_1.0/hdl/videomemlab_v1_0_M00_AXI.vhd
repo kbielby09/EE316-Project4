@@ -357,8 +357,7 @@ begin
 	  --implement master command interface state machine
 	  MASTER_EXECUTION_PROC:process(M_AXI_ACLK)
            	variable scancode : std_logic_vector(7 downto 0);
-           	-- variable extended, keyup : std_logic := '0';
-           	variable keyup : std_logic := '0';
+           	variable extended, keyup : std_logic := '0';
             variable shift_l_down, ctrl_l_down, alt_l_down : std_logic;
             variable shift_r_down, ctrl_r_down, alt_r_down : std_logic;
             variable next_state : state;
@@ -383,7 +382,7 @@ begin
             ctrl_r_down := '0';
             alt_r_down := '0';
             keyup := '0';
-            -- extended := '0';
+            extended := '0';
 	      else
 	        -- state transition
 	        case (mst_exec_state) is
@@ -426,12 +425,12 @@ begin
 
 	          when WAIT4IRQ =>
 	            -- This state is just a pause between READ/WRITE transactions
-                -- if ( IRQ_I = '1' ) then
-    	          --   mst_exec_state  <= WAIT4CODE;
-                -- end if;
-                if ( IRQ_I = '1' and previous_irq /= IRQ_I) then
+                if ( IRQ_I = '1' ) then
     	            mst_exec_state  <= WAIT4CODE;
                 end if;
+                -- if ( IRQ_I = '1' and previous_irq /= IRQ_I) then
+    	          --   mst_exec_state  <= WAIT4CODE;
+                -- end if;
 
 	          when WAIT4CODE =>
 	            -- This state is responsible to issue start_single_read pulse to
@@ -444,15 +443,15 @@ begin
                     if ( scancode = X"F0" ) then
                         keyup := '1';
                     elsif ( scancode = X"E0" ) then
-                        -- extended := '1';
+                        extended := '1';
                     else
                         if ( keyup = '1' ) then
                             if ( scancode = X"59" ) then
                                 shift_r_down := '0';
-                            -- elsif ( scancode = X"14" and extended = '1' ) then
-                            --     ctrl_r_down := '0';
-                            -- elsif ( scancode = X"11" and extended = '1' ) then
-                            --     alt_r_down := '0';
+                            elsif ( scancode = X"14" and extended = '1' ) then
+                                ctrl_r_down := '0';
+                            elsif ( scancode = X"11" and extended = '1' ) then
+                                alt_r_down := '0';
                             elsif ( scancode = X"12" ) then
                                 shift_l_down := '0';
                             elsif ( scancode = X"14" ) then
@@ -460,12 +459,12 @@ begin
                             elsif ( scancode = X"11" ) then
                                 alt_l_down := '0';
                             end if;
-                        -- elsif ( extended = '1' ) then
-                        --     if ( scancode = X"14" ) then
-                        --         ctrl_r_down := '1';
-                        --     elsif ( scancode = X"11" ) then
-                        --         alt_r_down := '1';
-                        --     end if;
+                        elsif ( extended = '1' ) then
+                            if ( scancode = X"14" ) then
+                                ctrl_r_down := '1';
+                            elsif ( scancode = X"11" ) then
+                                alt_r_down := '1';
+                            end if;
                         elsif ( scancode = X"12" ) then
                             shift_l_down := '1';
                         elsif ( scancode = X"14") then
@@ -479,7 +478,7 @@ begin
                         end if;
 
                         keyup := '0';
-                        -- extended := '0';
+                        extended := '0';
                     end if;
 
                     -- transfer variables to signals
@@ -606,37 +605,56 @@ begin
 		SCAN : scancode2ascii
 		Port map(
 		  scancode => code,
-			ascii => OPEN,
+			ascii => ascii,
+			-- ascii => OPEN,
 			shift => shift,
 			ctrl => ctrl,
 			alt => alt
 		);
 
     -- set the text and background color here
-		txtcolor <= "1111";
+		-- txtcolor <= "1111";
+		-- bgcolor <= "0000";
+		txtcolor <= "1100";
 		bgcolor <= "0000";
 
     -- set the color_pixels word based on the reg_pixels byte which is a registered
     -- version of the pixels byte that comes from the lookup table.  When reg_pixels is '1', we use the
     -- text color, otherwise we use the background color
 
-  ascii <= "01000011"; -- ascii value for A
-	-- color_pixels(3 downto 0) <= txtcolor when reg_pixels(0) = '1' else bgcolor;
-	-- color_pixels(7 downto 4) <= txtcolor when reg_pixels(1) = '1' else bgcolor;
-	-- color_pixels(11 downto 8) <= txtcolor when reg_pixels(2) = '1' else bgcolor;
-	-- color_pixels(15 downto 12) <= txtcolor when reg_pixels(3) = '1' else bgcolor;
-	-- color_pixels(19 downto 16) <= txtcolor when reg_pixels(4) = '1' else bgcolor;
-	-- color_pixels(23 downto 20) <= txtcolor when reg_pixels(5) = '1' else bgcolor;
-	-- color_pixels(27 downto 24) <= txtcolor when reg_pixels(6) = '1' else bgcolor;
-	-- color_pixels(31 downto 28) <= txtcolor when reg_pixels(7) = '1' else bgcolor;
-	color_pixels(3 downto 0) <= txtcolor when pixels(0) = '1' else bgcolor;
-	color_pixels(7 downto 4) <= txtcolor when pixels(1) = '1' else bgcolor;
-	color_pixels(11 downto 8) <= txtcolor when pixels(2) = '1' else bgcolor;
-	color_pixels(15 downto 12) <= txtcolor when pixels(3) = '1' else bgcolor;
-	color_pixels(19 downto 16) <= txtcolor when pixels(4) = '1' else bgcolor;
-	color_pixels(23 downto 20) <= txtcolor when pixels(5) = '1' else bgcolor;
-	color_pixels(27 downto 24) <= txtcolor when pixels(6) = '1' else bgcolor;
-	color_pixels(31 downto 28) <= txtcolor when pixels(7) = '1' else bgcolor;
+  -- ascii <= "01000001"; -- ascii value for A
+	color_pixels(3 downto 0) <= std_logic_vector(unsigned(txtcolor) - 1) when reg_pixels(0) = '1' else bgcolor;
+	color_pixels(7 downto 4) <= std_logic_vector(unsigned(txtcolor) - 2) when reg_pixels(1) = '1' else bgcolor;
+	color_pixels(11 downto 8) <= std_logic_vector(unsigned(txtcolor) - 3) when reg_pixels(2) = '1' else bgcolor;
+	color_pixels(15 downto 12) <= std_logic_vector(unsigned(txtcolor) - 4) when reg_pixels(3) = '1' else bgcolor;
+	color_pixels(19 downto 16) <= std_logic_vector(unsigned(txtcolor) - 5) when reg_pixels(4) = '1' else bgcolor;
+	color_pixels(23 downto 20) <= std_logic_vector(unsigned(txtcolor) - 6) when reg_pixels(5) = '1' else bgcolor;
+	color_pixels(27 downto 24) <= std_logic_vector(unsigned(txtcolor) - 7) when reg_pixels(6) = '1' else bgcolor;
+	color_pixels(31 downto 28) <= std_logic_vector(unsigned(txtcolor) - 8) when reg_pixels(7) = '1' else bgcolor;
+	-- color_pixels(3 downto 0) <= txtcolor when reg_pixels(0) = '0' else bgcolor;
+	-- color_pixels(7 downto 4) <= txtcolor when reg_pixels(1) = '0' else bgcolor;
+	-- color_pixels(11 downto 8) <= txtcolor when reg_pixels(2) = '0' else bgcolor;
+	-- color_pixels(15 downto 12) <= txtcolor when reg_pixels(3) = '0' else bgcolor;
+	-- color_pixels(19 downto 16) <= txtcolor when reg_pixels(4) = '0' else bgcolor;
+	-- color_pixels(23 downto 20) <= txtcolor when reg_pixels(5) = '0' else bgcolor;
+	-- color_pixels(27 downto 24) <= txtcolor when reg_pixels(6) = '0' else bgcolor;
+	-- color_pixels(31 downto 28) <= txtcolor when reg_pixels(7) = '0' else bgcolor;
+	-- color_pixels(3 downto 0) <= txtcolor when pixels(0) = '1' else bgcolor;
+	-- color_pixels(7 downto 4) <= txtcolor when pixels(1) = '1' else bgcolor;
+	-- color_pixels(11 downto 8) <= txtcolor when pixels(2) = '1' else bgcolor;
+	-- color_pixels(15 downto 12) <= txtcolor when pixels(3) = '1' else bgcolor;
+	-- color_pixels(19 downto 16) <= txtcolor when pixels(4) = '1' else bgcolor;
+	-- color_pixels(23 downto 20) <= txtcolor when pixels(5) = '1' else bgcolor;
+	-- color_pixels(27 downto 24) <= txtcolor when pixels(6) = '1' else bgcolor;
+	-- color_pixels(31 downto 28) <= txtcolor when pixels(7) = '1' else bgcolor;
+	-- color_pixels(3 downto 0) <= txtcolor when pixels(0) = '0' else bgcolor;
+	-- color_pixels(7 downto 4) <= txtcolor when pixels(1) = '0' else bgcolor;
+	-- color_pixels(11 downto 8) <= txtcolor when pixels(2) = '0' else bgcolor;
+	-- color_pixels(15 downto 12) <= txtcolor when pixels(3) = '0' else bgcolor;
+	-- color_pixels(19 downto 16) <= txtcolor when pixels(4) = '0' else bgcolor;
+	-- color_pixels(23 downto 20) <= txtcolor when pixels(5) = '0' else bgcolor;
+	-- color_pixels(27 downto 24) <= txtcolor when pixels(6) = '0' else bgcolor;
+	-- color_pixels(31 downto 28) <= txtcolor when pixels(7) = '0' else bgcolor;
 	-- User logic ends
 
 	REGISTER_IRQ : process(M_AXI_ACLK)
